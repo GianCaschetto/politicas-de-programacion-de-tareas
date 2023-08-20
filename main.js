@@ -17,14 +17,14 @@ class Task {
   
     // Método para ejecutar la tarea en intervalos de tiempo (timeSlice)
     async execute(timeSlice) {
-      console.log(`Executing Task ${this.id}...`);
+      console.log(`Ejecuntando tarea ${this.id}...`);
       this.startTime = Date.now(); // Registrar el tiempo de inicio de la tarea
       const executionTime = Math.min(timeSlice, this.remainingTime);
       this.remainingTime -= executionTime; // Actualizar el tiempo restante
       updateProgressBar(this.id, this.executionTime - this.remainingTime);
       await new Promise(resolve => setTimeout(resolve, executionTime));
       this.endTime = Date.now(); // Registrar el tiempo de finalización de la tarea
-      console.log(`Task ${this.id} completed (${this.remainingTime} ms remaining).`);
+      console.log(`Tarea ${this.id} completada (${this.remainingTime} ms restante).`);
   
       return this.remainingTime > 0; // Devolver verdadero si la tarea aún no está completa
     }
@@ -39,13 +39,13 @@ class Task {
   
     // Método para iniciar la planificación de tareas
     async start() {
-      console.log("Starting Scheduling...");
+      console.log("Empezando ...");
   
       for (const task of this.tasks) {
         await this.executeTaskWithSubtasks(task);
       }
   
-      console.log("All tasks completed.");
+      console.log("Todas las tareas han sido completadas");
     }
   
     // Método para ejecutar una tarea con sus subtareas
