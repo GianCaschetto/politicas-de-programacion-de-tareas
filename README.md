@@ -1,4 +1,4 @@
-![image](https://github.com/GianCaschetto/politicas-de-programacion-de-tareas/assets/83784934/49eb342e-8922-4882-8c6f-765bb224d66f)# politicas-de-programacion-de-tareas
+# Politicas-de-programacion-de-tareas
 
 ##Como usar?
 
