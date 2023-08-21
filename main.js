@@ -95,9 +95,6 @@ class Task {
   // Creación de instancia de planificador con las tareas y tiempo de intervalo
   const scheduler = new Scheduler(tasks, 1000);
   
-  // ... (El resto del código sigue igual)
-  
-  
   // Función para actualizar la barra de progreso en el HTML
   function updateProgressBar(taskId, progress) {
     const progressBar = document.getElementById(`progress${taskId}`);
@@ -178,7 +175,7 @@ class Task {
         // Verificar si todas las barras de progreso están llenas
         const allProgressBarsFilled = Array.from(progressBars).every(progressBar => {
           const percentage = parseInt(progressBar.getAttribute('aria-valuenow'));
-          return percentage >= 100;
+          return percentage >= 100;fre
         });
 
         // Si todas las tareas están completas, salir del bucle
