@@ -147,5 +147,9 @@ El código también incluye una interfaz de usuario que muestra barras de progre
 - Aplica conceptos de teoría de árboles y políticas de planificación en un contexto práctico de programación. 
 
  
+##Diagrama del programa
+
+![diagrama-metodos-cuantitativos](https://github.com/GianCaschetto/politicas-de-programacion-de-tareas/assets/83784934/518c47cf-deed-4049-8700-0564c67adff7)
+
 
 Para concluir podemos decir que este código de ejemplo demuestra cómo combinar la teoría de árboles y la política Round Robin para gestionar eficazmente tareas y subtareas. La estructura jerárquica permite una organización eficiente, mientras que la política de planificación garantiza una ejecución justa y equitativa de todas las tareas. 
